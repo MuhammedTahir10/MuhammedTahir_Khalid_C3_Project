@@ -16,9 +16,13 @@ public class Restaurant {
         this.location = location;
         this.openingTime = openingTime;
         this.closingTime = closingTime;
+
+        //Part 3: Failing Test Case Start
         //default menu items
         this.menu.add(new Item("Lemon Rice",73));
         this.menu.add(new Item("Sambar Rice",45));
+
+        ////Part 3: Failing Test Case End
     }
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
@@ -81,6 +85,17 @@ public class Restaurant {
 
     public String getName() {
         return name;
+    }
+
+    //Part 3: Failing Test Case Start
+    public int getOrderValue(List<Item> item){
+        int totalValue = 0;
+        for (Item myItem : item) {
+            totalValue += myItem.getPrice();
+        }
+        return totalValue;
+
+        //Part 3: Failing Test Case End
     }
 
 
