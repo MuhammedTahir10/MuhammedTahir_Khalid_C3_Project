@@ -20,12 +20,12 @@ public class Item {
                 ;
     }
 
-    ////Part 3: Failing Test Case Start
+    ////Part 3: Solution
     public int getPrice() {
         return price;
     }
 
-    //Part 3: Failing Test Case End
+    //Part 3: Solution
 
 
 }

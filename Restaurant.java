@@ -17,12 +17,12 @@ public class Restaurant {
         this.openingTime = openingTime;
         this.closingTime = closingTime;
 
-        //Part 3: Failing Test Case Start
+        
         //default menu items
         this.menu.add(new Item("Lemon Rice",73));
         this.menu.add(new Item("Sambar Rice",45));
 
-        ////Part 3: Failing Test Case End
+
     }
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
@@ -87,7 +87,7 @@ public class Restaurant {
         return name;
     }
 
-    //Part 3: Failing Test Case Start
+    //Part 3: Solution
     public int getOrderValue(List<Item> item){
         int totalValue = 0;
         for (Item myItem : item) {
@@ -95,7 +95,7 @@ public class Restaurant {
         }
         return totalValue;
 
-        //Part 3: Failing Test Case End
+        //Part 3: Solution
     }
 
 
